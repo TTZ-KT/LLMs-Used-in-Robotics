@@ -658,9 +658,5 @@ The following table contains all verified papers with their arXiv IDs and DOIs.
 | OK-Robot | 2401.12202 | 10.48550/arXiv.2401.12202 | 2024 |
 | Butter-Bench | 2510.21860 | 10.48550/arXiv.2510.21860 | 2025 |
 
----
-```
 
----
-
-*This comprehensive literature review combines the Awesome-LLM-Robotics paper list with detailed explanations for understanding AI-powered robots. Last updated: December 2025*
+*This comprehensive literature review combines the LLM-Robotics paper list with detailed explanations for understanding AI-powered robots. Last updated: December 2025*
