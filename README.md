@@ -8,6 +8,7 @@ A comprehensive curative list of **papers using Large Language/Multi-Modal Model
 ## Table of Contents
 
 - [Introduction: Why Use LLMs in Robots?](#introduction-why-use-llms-in-robots)
+- [Paper Distribution by Research Area](#paper-distribution-by-research-area)
 - [Surveys](#surveys)
 - [Task Planning and Decomposition](#task-planning-and-decomposition)
 - [Reasoning](#reasoning)
@@ -45,7 +46,6 @@ Most LLM-robot systems work like this:
 
 ---
 
-[Paper Distribution by Research Area](#paper-distribution-by-research-area)
 
 ## Paper Distribution by Research Area
 
