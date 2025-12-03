@@ -63,7 +63,19 @@ Most LLM-robot systems work like this:
 | Scene Understanding & Perception | 7 | 5.9% |
 | Human-Robot Interaction | 5 | 4.2% |
 
-[View Interactive Chart](./llm-robotics-papers-chart.jsx)
+```mermaid
+pie showData
+    title LLM-Robotics Papers by Area (Total: 119)
+    "Task Planning (31)" : 31
+    "Manipulation (18)" : 18
+    "Reasoning (17)" : 17
+    "Navigation (12)" : 12
+    "Safety (10)" : 10
+    "Simulation (10)" : 10
+    "Surveys (9)" : 9
+    "Perception (7)" : 7
+    "HRI (5)" : 5
+```
 
 > **Key Finding:** Task Planning dominates LLM-Robotics research with 26.1% of papers, demonstrating that LLMs excel at decomposing high-level goals into actionable robot commands.
 
