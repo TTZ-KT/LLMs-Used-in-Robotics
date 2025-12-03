@@ -45,6 +45,28 @@ Most LLM-robot systems work like this:
 
 ---
 
+[Paper Distribution by Research Area](#paper-distribution-by-research-area)
+
+## Paper Distribution by Research Area
+
+**Total Papers: 119**
+
+| Area | Papers | % |
+|------|--------|---|
+| **Task Planning & Decomposition** | **31** | **26.1%** |
+| Object Manipulation & Grasping | 18 | 15.1% |
+| Reasoning | 17 | 14.3% |
+| Spatial Reasoning & Navigation | 12 | 10.1% |
+| Safety, Risks & Evaluation | 10 | 8.4% |
+| Simulation Frameworks | 10 | 8.4% |
+| Surveys | 9 | 7.6% |
+| Scene Understanding & Perception | 7 | 5.9% |
+| Human-Robot Interaction | 5 | 4.2% |
+
+> 🎯 **Key Finding:** Task Planning dominates LLM-Robotics research with 26.1% of papers, demonstrating that LLMs excel at decomposing high-level goals into actionable robot commands.
+
+---
+
 ## Surveys
 
 | Paper | Venue/Date | Links |
