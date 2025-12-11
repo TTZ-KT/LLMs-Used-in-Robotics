@@ -63,7 +63,7 @@ Most LLM-robot systems work like this:
 
 ```mermaid
 pie showData
-    title LLM-Robotics Papers by Category (Total: 119)
+    title LLM-Robotics Papers (Total: 119)
     "Planning & Reasoning (48)" : 48
     "Manipulation & Control (18)" : 18
     "Safety, Eval, Benchmarks & HRI (20)" : 20
