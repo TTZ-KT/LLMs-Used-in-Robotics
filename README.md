@@ -69,13 +69,13 @@ Most LLM-robot systems work like this:
 
 ```mermaid
 pie showData
-    title LLM-Robotics Papers by Category (Total: 151)
-    "Planning & Reasoning (55)" : 55
-    "Manipulation & Control (32)" : 32
-    "Safety, Eval, Benchmarks & HRI (23)" : 23
-    "Navigation & Embodied Agents (14)" : 14
-    "Surveys (14)" : 14
-    "Perception & Scene Understanding (13)" : 13
+    title LLM-Robotics Papers by Category
+    "Planning & Reasoning " : 55
+    "Manipulation & Control " : 32
+    "Safety, Eval, Benchmarks & HRI " : 23
+    "Navigation & Embodied Agents " : 14
+    "Surveys " : 14
+    "Perception & Scene Understanding " : 13
 ```
 
 > **Key Finding:** Planning & Reasoning dominates LLM-Robotics research with 36% of papers, followed by Manipulation & Control at 21%, demonstrating that LLMs excel at both high-level reasoning and low-level robot control.
