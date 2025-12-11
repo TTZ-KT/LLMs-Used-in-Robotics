@@ -61,7 +61,7 @@ Most LLM-robot systems work like this:
 | 6 | **Surveys** | 9 | 8% |
 | | **Total** | **119** | **100%** |
 
-```
+```mermaid
 pie showData
     title LLM-Robotics Papers by Category (Total: 119)
     "Planning & Reasoning (48)" : 48
