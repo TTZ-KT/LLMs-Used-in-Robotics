@@ -12,13 +12,19 @@ A comprehensive curative list of **papers using Large Language/Multi-Modal Model
   * [Task Planning and Decomposition](#task-planning-and-decomposition)
   * [Reasoning](#reasoning)
   * [Planning](#planning)
+  * [Multi-Robot Coordination](#multi-robot-coordination)
+  * [Reward Design & Sim-to-Real](#reward-design--sim-to-real)
 * [2. Perception & Scene Understanding](#2-perception--scene-understanding)
 * [3. Manipulation & Control](#3-manipulation--control)
+  * [Vision-Language-Action Models](#vision-language-action-models)
+  * [Imitation Learning & Diffusion Policies](#imitation-learning--diffusion-policies)
 * [4. Navigation & Embodied Agents](#4-navigation--embodied-agents)
+  * [World Models](#world-models)
 * [5. Safety, Evaluation, Benchmarks & HRI](#5-safety-evaluation-benchmarks--hri)
   * [Safety, Risks, and Evaluation](#safety-risks-and-evaluation)
   * [Human-Robot Interaction](#human-robot-interaction)
   * [Simulation Frameworks](#simulation-frameworks)
+  * [Datasets & Benchmarks](#datasets--benchmarks)
 * [6. Surveys](#6-surveys)
 * [Key Challenges and Limitations](#key-challenges-and-limitations)
 * [Future Directions](#future-directions)
@@ -49,30 +55,30 @@ Most LLM-robot systems work like this:
 
 ## Paper Distribution by Research Area
 
-**Total Papers: 119**
+**Total Papers: 151**
 
 | # | Category | Papers | % |
 |---|----------|--------|---|
-| 1 | **Planning & Reasoning** | 48 | 40% |
-| 2 | **Perception & Scene Understanding** | 12 | 10% |
-| 3 | **Manipulation & Control** | 18 | 15% |
-| 4 | **Navigation & Embodied Agents** | 12 | 10% |
-| 5 | **Safety, Evaluation, Benchmarks & HRI** | 20 | 17% |
-| 6 | **Surveys** | 9 | 8% |
-| | **Total** | **119** | **100%** |
+| 1 | **Planning & Reasoning** | 55 | 36% |
+| 2 | **Perception & Scene Understanding** | 13 | 9% |
+| 3 | **Manipulation & Control** | 32 | 21% |
+| 4 | **Navigation & Embodied Agents** | 14 | 9% |
+| 5 | **Safety, Evaluation, Benchmarks & HRI** | 23 | 15% |
+| 6 | **Surveys** | 14 | 10% |
+| | **Total** | **151** | **100%** |
 
 ```mermaid
 pie showData
-    title LLM-Robotics Papers (Total: 119)
-    "Planning & Reasoning (48)" : 48
-    "Manipulation & Control (18)" : 18
-    "Safety, Eval, Benchmarks & HRI (20)" : 20
-    "Perception & Scene Understanding (12)" : 12
-    "Navigation & Embodied Agents (12)" : 12
-    "Surveys (9)" : 9
+    title LLM-Robotics Papers by Category (Total: 151)
+    "Planning & Reasoning (55)" : 55
+    "Manipulation & Control (32)" : 32
+    "Safety, Eval, Benchmarks & HRI (23)" : 23
+    "Navigation & Embodied Agents (14)" : 14
+    "Surveys (14)" : 14
+    "Perception & Scene Understanding (13)" : 13
 ```
 
-> **Key Finding:** Planning & Reasoning dominates LLM-Robotics research with 40% of papers, demonstrating that LLMs excel at decomposing high-level goals into actionable robot commands.
+> **Key Finding:** Planning & Reasoning dominates LLM-Robotics research with 36% of papers, followed by Manipulation & Control at 21%, demonstrating that LLMs excel at both high-level reasoning and low-level robot control.
 
 ---
 
@@ -268,6 +274,28 @@ Task planning means figuring out HOW to do something. When you ask a robot to "m
 
 ---
 
+## Multi-Robot Coordination
+
+| Paper | Venue/Date | Links |
+| --- | --- | --- |
+| **RoCo**: Dialectic Multi-Robot Collaboration with Large Language Models | ICRA, 2024 | [[Paper]](https://arxiv.org/abs/2307.04738) [[Website]](https://project-roco.github.io/) |
+| **LLM2Swarm**: Robot Swarms that Responsively Reason, Plan, and Collaborate through LLMs | arXiv, Oct 2024 | [[Paper]](https://arxiv.org/abs/2410.11387) |
+| **SMART-LLM**: Scalable Multi-Robot Collaboration with Large Language Models | arXiv, Sep 2023 | [[Paper]](https://arxiv.org/abs/2309.15943) |
+| **COHERENT**: LLM-based Heterogeneous Multi-Robot Task Planning | arXiv, Sep 2024 | [[Paper]](https://arxiv.org/abs/2409.00603) |
+| **Large Language Models for Multi-Robot Systems**: A Survey | arXiv, Feb 2025 | [[Paper]](https://arxiv.org/abs/2502.03814) |
+
+---
+
+## Reward Design & Sim-to-Real
+
+| Paper | Venue/Date | Links |
+| --- | --- | --- |
+| **Eureka**: Human-Level Reward Design via Coding Large Language Models | arXiv, Oct 2023 | [[Paper]](https://arxiv.org/abs/2310.12931) [[Code]](https://github.com/eureka-research/Eureka) [[Website]](https://eureka-research.github.io/) |
+| **DrEureka**: Language Model Guided Sim-to-Real Transfer | RSS, Jun 2024 | [[Paper]](https://arxiv.org/abs/2406.01967) [[Code]](https://github.com/eureka-research/DrEureka) [[Website]](https://eureka-research.github.io/dr-eureka/) |
+| **GenSim**: Generating Robotic Simulation Tasks via Large Language Models | ICLR, 2024 | [[Paper]](https://arxiv.org/abs/2310.01361) [[Website]](https://gen-sim.github.io/) |
+
+---
+
 # 2. Perception & Scene Understanding
 
 *Core question: "How does the robot UNDERSTAND what it sees?"*
@@ -348,6 +376,7 @@ Before acting, robots must understand what they see. LLMs help interpret scenes,
 
 | Paper | Venue/Date | Links |
 | --- | --- | --- |
+| **SpatialVLM**: Endowing Vision-Language Models with Spatial Reasoning Capabilities | CVPR, 2024 | [[Paper]](https://arxiv.org/abs/2401.12168) [[Website]](https://spatial-vlm.github.io/) |
 | **CortexBench**: Where are we in the search for an Artificial Visual Cortex? | arXiv, Mar 2023 | [[Paper]](https://arxiv.org/abs/2303.18240) |
 | **Embodied-CLIP**: Simple but Effective CLIP Embeddings for Embodied AI | CVPR, Nov 2021 | [[Paper]](https://arxiv.org/abs/2111.09888) [[Pytorch Code]](https://github.com/allenai/embodied-clip) |
 
@@ -437,6 +466,34 @@ Manipulation means using robot arms and grippers to interact with objects - pick
 
 ---
 
+## Vision-Language-Action Models
+
+| Paper | Venue/Date | Links |
+| --- | --- | --- |
+| **π0 (Pi-Zero)**: A Vision-Language-Action Flow Model for General Robot Control | arXiv, Oct 2024 | [[Paper]](https://arxiv.org/abs/2410.24164) [[Website]](https://www.physicalintelligence.company/blog/pi0) |
+| **π0-FAST**: Efficient Action Tokenization for Vision-Language-Action Models | arXiv, Jan 2025 | [[Paper]](https://arxiv.org/abs/2501.09747) [[Code]](https://github.com/physical-intelligence/openpi) |
+| **OpenVLA**: An Open-Source Vision-Language-Action Model | arXiv, Jun 2024 | [[Paper]](https://arxiv.org/abs/2406.09246) [[Code]](https://github.com/openvla/openvla) [[Website]](https://openvla.github.io/) |
+| **OpenVLA-OFT**: Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success | arXiv, Feb 2025 | [[Paper]](https://arxiv.org/abs/2502.19645) [[Website]](https://openvla-oft.github.io/) |
+| **Octo**: An Open-Source Generalist Robot Policy | RSS, 2024 | [[Paper]](https://arxiv.org/abs/2405.12213) [[Code]](https://github.com/octo-models/octo) [[Website]](https://octo-models.github.io/) |
+| **Helix**: A Vision-Language-Action Model for Generalist Humanoid Control | Figure AI, 2024 | [[Website]](https://www.figure.ai/news/helix) |
+| **FLOWER**: Democratizing Generalist Robot Policies with Efficient VLA Flow Policies | arXiv, Sep 2025 | [[Paper]](https://arxiv.org/abs/2509.04996) |
+| **RDT-1B**: Robot Diffusion Transformer | arXiv, Oct 2024 | [[Paper]](https://arxiv.org/abs/2410.07864) [[Code]](https://github.com/thu-ml/RDT-1B) |
+
+---
+
+## Imitation Learning & Diffusion Policies
+
+| Paper | Venue/Date | Links |
+| --- | --- | --- |
+| **ALOHA**: Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware | arXiv, Apr 2023 | [[Paper]](https://arxiv.org/abs/2304.13705) [[Code]](https://github.com/tonyzhaozh/aloha) [[Website]](https://tonyzhaozh.github.io/aloha/) |
+| **Mobile ALOHA**: Learning Bimanual Mobile Manipulation with Low-Cost Whole-Body Teleoperation | arXiv, Jan 2024 | [[Paper]](https://arxiv.org/abs/2401.02117) [[Website]](https://mobile-aloha.github.io/) |
+| **ACT**: Action Chunking with Transformers for Robotic Manipulation | arXiv, Apr 2023 | [[Paper]](https://arxiv.org/abs/2304.13705) [[Code]](https://github.com/tonyzhaozh/act) |
+| **Diffusion Policy**: Visuomotor Policy Learning via Action Diffusion | RSS, 2023 | [[Paper]](https://arxiv.org/abs/2303.04137) [[Code]](https://github.com/real-stanford/diffusion_policy) [[Website]](https://diffusion-policy.cs.columbia.edu/) |
+| **DexCap**: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation | arXiv, Mar 2024 | [[Paper]](https://arxiv.org/abs/2403.07788) [[Website]](https://dex-cap.github.io/) |
+| **LIBERO**: Benchmarking Knowledge Transfer in Lifelong Robot Learning | NeurIPS, 2023 | [[Paper]](https://arxiv.org/abs/2310.08915) [[Code]](https://github.com/Lifelong-Robot-Learning/LIBERO) |
+
+---
+
 # 4. Navigation & Embodied Agents
 
 *Core question: "How does the robot MOVE through environments?"*
@@ -514,6 +571,16 @@ Navigation is about getting from point A to point B safely. LLMs help robots und
 
 ---
 
+## World Models
+
+| Paper | Venue/Date | Links |
+| --- | --- | --- |
+| **UniSim**: Learning Interactive Real-World Simulators | ICLR, 2024 | [[Paper]](https://arxiv.org/abs/2310.06114) [[Website]](https://universal-simulator.github.io/) |
+| **Genie**: Generative Interactive Environments | arXiv, Feb 2024 | [[Paper]](https://arxiv.org/abs/2402.15391) [[Website]](https://sites.google.com/view/genie-2024) |
+| **DayDreamer**: World Models for Physical Robot Learning | CoRL, 2022 | [[Paper]](https://arxiv.org/abs/2206.14176) [[Website]](https://danijar.com/daydreamer/) |
+
+---
+
 # 5. Safety, Evaluation, Benchmarks & HRI
 
 *Core question: "Does it WORK safely, and how do we measure it?"*
@@ -538,17 +605,23 @@ Safety is critical. Robots must avoid hurting people, breaking things, and getti
 
 ---
 
-### Butter-Bench (Multiple, 2025)
+### Butter-Bench (Andon Labs, 2025)
 
-**Paper**: "Butter-Bench: Benchmarking LLMs for Real Robot Tasks"
+**Paper**: "Butter-Bench: Evaluating LLM Controlled Robots for Practical Intelligence"
 
-**Simple Explanation**: This paper tested how well LLMs actually work for robot tasks. The results are humbling: on practical tasks like folding clothes or making sandwiches, LLMs scored only 40% where humans score 95%. The biggest gaps: understanding social situations (0-10% vs 100% human), multi-step spatial planning, and physical intuition. It shows we still have a long way to go.
+**Simple Explanation**: Can an LLM-controlled robot simply "pass the butter"? Butter-Bench tests this by deploying real robots (TurtleBot 4) in office environments with state-of-the-art LLMs as orchestrators. The task sounds simple: find butter, recognize it visually, locate the human, deliver it, wait for confirmation, and return to dock. But the results are humbling: the best LLM (Gemini 2.5 Pro) scored only 40% while humans averaged 95%. The benchmark tests six subtasks isolating specific competencies: spatial navigation, object recognition, social understanding, and multi-step planning.
 
-**Why It's Important**: Reality check - shows current limitations and where research should focus.
+**Key Findings**:
+- LLMs fail most at **multi-step spatial planning** (can't decompose complex navigation)
+- LLMs lack **social understanding** (don't wait for user confirmation, miss when user leaves)
+- Fine-tuning LLMs for "embodied reasoning" does NOT improve scores
+- One robot even had an existential crisis and started writing poetry when its dock malfunctioned!
+
+**Why It's Important**: This is a reality check - it proves that even the best LLMs today lack "practical intelligence" (navigating real-world messiness) despite excelling at "analytical intelligence" (solving logic problems). It shows where research needs to focus.
 
 | Links | arXiv: 2510.21860 | DOI: 10.48550/arXiv.2510.21860 |
 | --- | --- | --- |
-| [[Paper]](https://arxiv.org/abs/2510.21860) |  |  |
+| [[Paper]](https://arxiv.org/abs/2510.21860) | [[Website]](https://andonlabs.com/evals/butter-bench) |  |
 
 ---
 
@@ -626,12 +699,27 @@ This area focuses on how robots communicate with humans naturally - understandin
 
 ---
 
+## Datasets & Benchmarks
+
+| Paper | Venue/Date | Links |
+| --- | --- | --- |
+| **DROID**: A Large-Scale In-the-Wild Robot Manipulation Dataset | RSS, 2024 | [[Paper]](https://arxiv.org/abs/2403.12945) [[Website]](https://droid-dataset.github.io/) |
+| **RoboCasa**: Large-Scale Simulation of Everyday Tasks for Generalist Robots | arXiv, Jun 2024 | [[Paper]](https://arxiv.org/abs/2406.02523) [[Website]](https://robocasa.ai/) |
+| **SimplerEnv**: Simulated Manipulation Policy Evaluation Environments for Real Robot Setups | arXiv, May 2024 | [[Paper]](https://arxiv.org/abs/2405.05941) [[Code]](https://github.com/simpler-env/SimplerEnv) |
+
+---
+
 # 6. Surveys
 
 *Core question: "What does the field look like overall?"*
 
 | Paper | Venue/Date | Links |
 | --- | --- | --- |
+| **Agentic LLM-based Robotic Systems**: A Review on Agenticness and Ethics | Frontiers, Jun 2025 | [[Paper]](https://www.frontiersin.org/articles/10.3389/frobt.2025.1605405) |
+| **Large Language Models for Multi-Robot Systems**: A Survey | arXiv, Feb 2025 | [[Paper]](https://arxiv.org/abs/2502.03814) |
+| **Large Language Models for Robotics**: A Survey (Zeng et al.) | arXiv, Nov 2023 (updated Dec 2025) | [[Paper]](https://arxiv.org/abs/2311.07226) |
+| **A Survey on Integration of LLMs with Intelligent Robots** | arXiv, Apr 2024 | [[Paper]](https://arxiv.org/abs/2404.09228) |
+| **A Survey of Robot Intelligence with Large Language Models** | MDPI, Oct 2024 | [[Paper]](https://www.mdpi.com/2076-3417/14/19/8868) |
 | A Survey of Robotic Language Grounding: Tradeoffs between Symbols and Embeddings | IJCAI, Aug 2024 | [[Paper]](https://arxiv.org/abs/2405.13245) |
 | A Superalignment Framework in Autonomous Driving with Large Language Models | arXiv, Jun 2024 | [[Paper]](https://arxiv.org/abs/2406.05651) |
 | Neural Scaling Laws for Embodied AI | arXiv, May 2024 | [[Paper]](https://arxiv.org/abs/2405.14005) |
@@ -684,27 +772,40 @@ The following table contains all verified papers with their arXiv IDs and DOIs.
 | VOYAGER | 2305.16291 | 10.48550/arXiv.2305.16291 | 2023 |
 | Zero-Shot Planners | 2201.07207 | 10.48550/arXiv.2201.07207 | 2022 |
 | SayPlan | 2307.06135 | 10.48550/arXiv.2307.06135 | 2023 |
+| RoCo | 2307.04738 | 10.48550/arXiv.2307.04738 | 2024 |
+| Eureka | 2310.12931 | 10.48550/arXiv.2310.12931 | 2023 |
+| DrEureka | 2406.01967 | 10.48550/arXiv.2406.01967 | 2024 |
 | **Perception & Scene Understanding** |  |  |  |
 | PaLM-E | 2303.03378 | 10.48550/arXiv.2303.03378 | 2023 |
 | RT-2 | 2307.15818 | 10.48550/arXiv.2307.15818 | 2023 |
 | RT-1 | 2212.06817 | 10.48550/arXiv.2212.06817 | 2022 |
 | Open X-Embodiment | 2310.08864 | 10.48550/arXiv.2310.08864 | 2023 |
 | ConceptGraphs | 2309.16650 | 10.48550/arXiv.2309.16650 | 2023 |
+| SpatialVLM | 2401.12168 | 10.48550/arXiv.2401.12168 | 2024 |
 | **Manipulation & Control** |  |  |  |
 | VoxPoser | 2307.05973 | 10.48550/arXiv.2307.05973 | 2023 |
 | TidyBot | 2305.05658 | 10.48550/arXiv.2305.05658 | 2023 |
 | CLIPort | 2109.12098 | 10.48550/arXiv.2109.12098 | 2021 |
 | GraspGPT | 2307.13204 | 10.48550/arXiv.2307.13204 | 2023 |
+| π0 (Pi-Zero) | 2410.24164 | 10.48550/arXiv.2410.24164 | 2024 |
+| OpenVLA | 2406.09246 | 10.48550/arXiv.2406.09246 | 2024 |
+| Octo | 2405.12213 | 10.48550/arXiv.2405.12213 | 2024 |
+| ALOHA | 2304.13705 | 10.48550/arXiv.2304.13705 | 2023 |
+| Diffusion Policy | 2303.04137 | 10.48550/arXiv.2303.04137 | 2023 |
 | **Navigation & Embodied Agents** |  |  |  |
 | LM-Nav | 2207.04429 | 10.48550/arXiv.2207.04429 | 2022 |
 | VLMaps | 2210.05714 | 10.48550/arXiv.2210.05714 | 2022 |
 | NavGPT | 2305.16986 | 10.48550/arXiv.2305.16986 | 2023 |
 | CLIP-Fields | 2210.05663 | 10.48550/arXiv.2210.05663 | 2022 |
+| UniSim | 2310.06114 | 10.48550/arXiv.2310.06114 | 2024 |
+| Genie | 2402.15391 | 10.48550/arXiv.2402.15391 | 2024 |
 | **Safety, Evaluation, Benchmarks & HRI** |  |  |  |
 | Socratic Models | 2204.00598 | 10.48550/arXiv.2204.00598 | 2022 |
 | ChatGPT for Robotics | 2306.17582 | 10.48550/arXiv.2306.17582 | 2023 |
 | OK-Robot | 2401.12202 | 10.48550/arXiv.2401.12202 | 2024 |
 | Butter-Bench | 2510.21860 | 10.48550/arXiv.2510.21860 | 2025 |
+| DROID | 2403.12945 | 10.48550/arXiv.2403.12945 | 2024 |
+| RoboCasa | 2406.02523 | 10.48550/arXiv.2406.02523 | 2024 |
 
 ---
 
