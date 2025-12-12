@@ -756,7 +756,7 @@ Research is moving toward:
 
 ---
 
-# Complete Reference Table with DOIs
+# Famous Works with DOIs
 
 The following table contains all verified papers with their arXiv IDs and DOIs.
 
